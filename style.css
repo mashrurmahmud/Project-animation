@@ -26,9 +26,7 @@
 /* .choose_img{
     overflow: hidden;
 } */
-.menu2{
-    opacity: 0;
-}
+
 .menu2.show{
     opacity: 0;
     transition: 0.5s ease-in-out;
