@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
-   <header>
+<body class="overflow-x-hidden">
+   <header class="head relative">
        <nav class="shadow menu p-3">
          <div class="container flex justify-between items-center mx-auto">
          <h1 class="anton-regular text-[25px] md:text-[50px]">Navbro</h1>
@@ -21,33 +21,56 @@
             </ul>
         </div>
         <div class="flex gap-2 items-center ">
-            <button class="text-sm bg-cyan-400 font-bold roboto text-white px-3 py-2 transition duration-100 delay-75 cursor-pointer hover:bg-linear-to-r from-cyan-400 to-black md:text-2xl">Log in</button>
+            <button onclick="handleMenu()" class="text-sm bg-cyan-400 font-bold roboto text-white px-3 py-2 transition duration-100 delay-75 cursor-pointer hover:bg-linear-to-r from-cyan-400 to-black md:text-2xl">Log in</button>
             <div class="md:hidden ">
-                <i class="inline-block  text-3xl  bg-gray-400 p-3 fa-solid fa-bars"></i>
+                <i class="inline-block cursor-pointer bar text-3xl  bg-gray-400 p-3 fa-solid fa-bars"></i>
             </div>
         </div>
          </div>
+          <div class="absolute menu2  bg-white left-0 w-full top-19 z-10">
+            <ul class="    px-3 py-4 flex flex-col gap-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
 
     </nav>
    </header>
    <main>
-     <section class="banner relative flex items-center h-[500px] bg-black">
-        <div class="container  flex p-3 items-center justify-between">
-              <div class="text-white relative ">
-                 <h1 class="anton-regular text-2xl">Hello I am <span>Mashrur Mahmud Hossain </span></h1>
-                 <h2 class="roboto">I am <span class="animate-text inline-block"></span> </h2>
-                 <div class="w-[200px] h-[4px] absolute bottom-0 left-7 bg-green-500">
+     <section class="banner relative flex  items-center h-[500px] bg-black">
+        <div class="container mx-auto  flex p-3 items-center justify-between">
+              <div class="text-white  relative ">
+                 <h1 class="anton-regular mash text-2xl">Hello I am <span>Mashrur Mahmud Hossain </span></h1>
+                 <h2 class="roboto text-[30px]">I am <span class="animate-text inline-block text-green-500"></span> </h2>
+                 <div class="w-[200px] h-[4px] absolute bottom-0 left-[56px] bg-green-500">
 
                  </div>
 
                   
               </div> 
-              <div class="absolute left-0 bottom-0 md:static">
+              <div class="absolute left-0 bottom-0  md:static">
 
-               <img class="w-[125px] md:w-[250px] object-cover" src="./img/mash-removebg-preview.png" alt="">
+               <img class="w-[125px] md:w-[250px] masjh  object-cover" src="./img/mash-removebg-preview.png" alt="">
 
               </div>
 
+        </div>
+
+     </section>
+     <section id="choose" class="p-7">
+        <div class="container mx-auto flex flex-col md:flex-row  justify-between gap-4 items-center ">
+            <ul class="list-decimal text-animation "> 
+                <li class="roboto font-medium text-sm md:text-xl">Why Choose me?</li>
+                <li class="roboto font-medium text-sm md:text-xl">Experice in  both BackEnd and FrontEnd</li>
+                <li class="roboto font-medium text-sm md:text-xl">Profitient in Html5, CSS, JavaScript, React and Node.js</li>
+                <li class="roboto font-medium text-sm md:text-xl">Building AI startup APP for buisness</li>
+                <li class="roboto font-medium text-sm md:text-xl">Building Admin Pannel for Admin and moderator to run the website</li>
+
+            </ul>
+            <div class="choose_img">
+                <img class=" p-3 md:p-2 lg:p-0 " src="./img/engineer-removebg-preview.png" alt="">
+            </div>
         </div>
 
      </section>
