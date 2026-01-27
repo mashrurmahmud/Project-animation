@@ -1,0 +1,17 @@
+
+
+:root{
+  --primary-color:"Anton", sans-serif;
+  --secondary-color:"Roboto", sans-serif;
+  --third-color: "Oswald", sans-serif;
+}
+
+/* @media  (max-width:600px){
+    .menu h1{
+    font-family: var(--primary-color);
+    font-weight: 800;
+    filter: drop-shadow(0 4px 30px red);
+    font-size: 25px;
+}
+ 
+} */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+   <header>
+       <nav class="shadow menu p-3">
+         <div class="container flex justify-between items-center mx-auto">
+         <h1 class="anton-regular text-[25px] md:text-[50px]">Navbro</h1>
+        <div>
+            <ul class="hidden md:flex gap-2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-2 items-center ">
+            <button class="text-sm bg-cyan-400 font-bold roboto text-white px-3 py-2 transition duration-100 delay-75 cursor-pointer hover:bg-linear-to-r from-cyan-400 to-black md:text-2xl">Log in</button>
+            <div class="md:hidden ">
+                <i class="inline-block  text-3xl  bg-gray-400 p-3 fa-solid fa-bars"></i>
+            </div>
+        </div>
+         </div>
+
+    </nav>
+   </header>
+   <main>
+     <section class="banner relative flex items-center h-[500px] bg-black">
+        <div class="container  flex p-3 items-center justify-between">
+              <div class="text-white relative ">
+                 <h1 class="anton-regular text-2xl">Hello I am <span>Mashrur Mahmud Hossain </span></h1>
+                 <h2 class="roboto">I am <span class="animate-text inline-block"></span> </h2>
+                 <div class="w-[200px] h-[4px] absolute bottom-0 left-7 bg-green-500">
+
+                 </div>
+
+                  
+              </div> 
+              <div class="absolute left-0 bottom-0 md:static">
+
+               <img class="w-[125px] md:w-[250px] object-cover" src="./img/mash-removebg-preview.png" alt="">
+
+              </div>
+
+        </div>
+
+     </section>
+      
+   </main>
+   
+   <script src="https://kit.fontawesome.com/3f9f674f2d.js" crossorigin="anonymous"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+   <script src="./app.js"></script>
+</body>
+</html>
