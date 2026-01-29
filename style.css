@@ -6,6 +6,11 @@
   --third-color: "Oswald", sans-serif;
 }
 
+
+body{
+    height: 100vh;
+   
+}
 /* @media  (max-width:600px){
     .menu h1{
     font-family: var(--primary-color);
@@ -16,7 +21,16 @@
  
 } */
 
-
+.shade{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+   
+    position: fixed;
+    top: 0;
+    z-index: 34;
+    opacity: 0.5;
+}
 .text-animation{
     transform: translateY(50px);
     opacity: 0;
@@ -34,8 +48,25 @@
 
 }
 
+#login{
+    opacity: 0;
+}
+
 .menu2.show{
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
 
+.images{
+    background-color: red;
+    width: 500px;
+    height: 500px;
+    transition: 2s ease-in-out;
+    display: flex;
+
+}
+
+#sliderImage{
+    display: flex;
+    gap: 20px;
+}
