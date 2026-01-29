@@ -32,6 +32,18 @@ body{
     z-index: 40;
 }
 
+.cross{
+    z-index: 88;
+    
+}
+
+.cross-mark{
+    font-size: 45px;
+    transition: 0.5s;
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+
 .shade.show{
     opacity: 1;
     visibility: visible;

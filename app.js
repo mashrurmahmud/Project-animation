@@ -9,6 +9,7 @@ let menu = document.querySelector('.menu2');
 let bars = document.querySelector('.bar');
 let login = document.getElementById('loginModal');
 const image = ['./img/engineer-removebg-preview.png', './img/engineer.jpg', './img/mash.png'];
+const cross = document.querySelector('.cross-mark ');
 
 
 
@@ -44,7 +45,21 @@ clickMenow.addEventListener('click', function(){
     console.log('hello')
     shade.classList.toggle('show');
     login.classList.toggle('show');
+    console.log(cross.style)
+    cross.style.transform='rotate(360deg)';
 
+
+
+})
+
+cross.addEventListener('click', function(){
+    cross.style.transform='rotate(90deg)';
+    shade.classList.remove('show');
+    login.classList.remove('show');
+    
+
+    
+    
 })
 
 
