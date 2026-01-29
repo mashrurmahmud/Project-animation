@@ -1,9 +1,19 @@
 const test=['web devloper', 'Cyber-Security expert', 'Back-end Devloper'];
 
 let textScript = document.querySelector('.animate-text');
+// let clickMe = document.querySelector('.clickme');
+let clickMenow = document.querySelector('#clicklog');
+
+let shade = document.querySelector('.shade');
 let menu = document.querySelector('.menu2');
 let bars = document.querySelector('.bar');
+let login = document.getElementById('loginModal');
 const image = ['./img/engineer-removebg-preview.png', './img/engineer.jpg', './img/mash.png'];
+
+
+
+
+
 
 
 let countIndex = 0;
@@ -30,7 +40,12 @@ const ListB = [{name:'JackFruite', prize:300, image1:'./img/engineer.jpg'}, {nam
 //     }
 // }
 
+clickMenow.addEventListener('click', function(){
+    console.log('hello')
+    shade.classList.toggle('show');
+    login.classList.toggle('show');
 
+})
 
 
 const handleSlide = ()=>{

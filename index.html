@@ -22,7 +22,7 @@
             </ul>
         </div>
         <div class="flex gap-2 items-center ">
-            <button onclick="handleMenu()" class="text-sm bg-cyan-400 font-bold roboto text-white px-3 py-2 transition duration-100 delay-75 cursor-pointer animate-bounce rounded-2xl hover:bg-linear-to-r from-cyan-400 to-black md:text-2xl">Log in</button>
+            <button id="clicklog"  class="text-sm bg-cyan-400 font-bold roboto text-red-400 px-3 py-2 transition duration-100 delay-75 cursor-pointer   rounded-2xl md:text-2xl">Log in</button>
             <div class="md:hidden ">
                 <i class="inline-block cursor-pointer bar text-3xl  bg-gray-400 p-3 fa-solid fa-bars"></i>
             </div>
@@ -86,7 +86,7 @@
 
      </div>
 
-     <section id="login" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+     <section id="loginModal" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div class="container border-2 border-green-400 flex justify-center p-5">
             <form action="" onsubmit="handleSubmit()" class="border-2 space-y-2 w-[290px] md:w-[580px] bg-white p-5">
                  <div>
@@ -100,7 +100,7 @@
                     <br>
                     <input type="password" class="w-full md:w-[70%] border-2 p-2" placeholder="Enter your Password">
                     <br>
-                    <input id="login" type="submit" class="bg-green-500 px-2 cursor-pointer active:bg-amber-600 w-[70%] py-2 roboto font-medium">
+                    <input id="loginbtn" type="submit" class="bg-green-500 px-2 cursor-pointer active:bg-amber-600 w-[70%] py-2 roboto font-medium">
                  </div>
             </form>
         </div>
